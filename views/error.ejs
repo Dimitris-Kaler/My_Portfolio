@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+<body class="error-body">
+
+    <div id="error-div">
+            <h1>
+                <%= message %>
+            </h1>
+            <h2>
+                <%= error.status %>
+            </h2>
+            <p class="travolta-msg">Travolta Lost Your Page!!!!!</p>
+           <a href="/" class="err-href">Return To Homepage</a> 
+    
+            <!-- <pre><%= error.stack %></pre> -->
+       
+        <img src="/images/travolta.gif" alt="error404" id="error">
+    </div>
+</body>
+
+<!-- <h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre> -->
