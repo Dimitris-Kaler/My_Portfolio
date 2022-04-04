@@ -35,6 +35,8 @@ const auth={
     api_key:process.env.API_KEY,
     domain:process.env.DOMAIN
   }
+  // },
+  // host : "api.eu.mailgun.net"
 }
 
 
@@ -74,6 +76,7 @@ await transporter.sendMail(mailOptions,function(err,data){
    req.flash('msg', 'Thank you! Your message has been successfully sent.I will contact you very soon!')
    return res.redirect("/#contact")
     }else{
+      console.log(err)
     res.status(500)
     res.send("something get wrong")
   }
