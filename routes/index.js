@@ -34,9 +34,9 @@ const auth={
   auth:{
     api_key:process.env.API_KEY,
     domain:process.env.DOMAIN
-  }
-  // },
-  // host : "api.eu.mailgun.net"
+  },
+
+  host : "https://dkalerantes.herokuapp.com/"
 }
 
 
