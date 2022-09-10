@@ -5,12 +5,13 @@ const nodemailer=require('nodemailer');
 const mg = require('nodemailer-mailgun-transport');
 const fs=require("fs")
 const config = require("dotenv").config()
+const skillsArray=require("../services/skillServices")
 
 
 //render the page
 router.get("/",function(req,res){
 
-  res.render("index",{title:"My Portfolio",heroName:"Dimitris Kalerantes",projects:projectsArray,cv:"DimitrisKalerantesCV.pdf",msg:req.flash("msg")})
+  res.render("index",{title:"My Portfolio",heroName:"Dimitris Kalerantes",projects:projectsArray,skills:skillsArray,cv:"DimitrisKalerantesCV.pdf",msg:req.flash("msg")})
 
 })
 

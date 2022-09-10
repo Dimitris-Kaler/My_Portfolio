@@ -20,7 +20,7 @@
         <div class="brand">
           <a href="#hero">
             <img src="./images/kaler-logo.png">
-              
+
           </a>
         </div>
         <div class="nav-list">
@@ -31,6 +31,7 @@
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#skills" data-after="Skills">Skills</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
         </div>
@@ -38,15 +39,17 @@
     </div>
   </section>
 
-<!------Hero------->
+  <!------Hero------->
   <section id="hero">
-   
+
     <div class="hero container">
-      
-      
+
+
       <div class="presentation">
         <p><span class="welcome-p">Hi, my name is:</span></p>
-      <h1><%= heroName %></h1>
+        <h1>
+          <%= heroName %>
+        </h1>
         <h2 class="welcome-msg">Welcome to my Portfolio</h2>
         <div class="btn">
           <a href="#about" type="button" class="btn-effect"><span class="text">About Me</span></a>
@@ -94,7 +97,7 @@
       </div>
       <div class="col-right">
         <h2 class="section-title">About Me</h2>
-        <p>Hello. My name is Dimitris Kalerantes. I'm an enthusiastic Entry Level JS Developer 
+        <p>Hello. My name is Dimitris Kalerantes. I'm an enthusiastic Entry Level JS Developer
           seeking an
           position to use my skills in
           coding, troubleshooting complex
@@ -102,17 +105,45 @@
           completion of projects.
         </p>
         <div class="btn">
-          <a href="/downloadPdf" type="button" class="btn-about" download="DimitrisKalerantesCV.pdf"><span class="text">Download Resume</span></a>
+          <a href="/downloadPdf" type="button" class="btn-about" download="DimitrisKalerantesCV.pdf"><span
+              class="text">Download Resume</span></a>
         </div>
       </div>
     </div>
   </section>
+  <!-- SKILLS SECTION -->
+
+  <section id="skills">
+    <div class="skills container">
+      <h2 class="section-title">Skills</h2>
+      <div class="carusel">
+        <a class="switchLeft sliderButton"><img src="images/left-arrow.png"></a>
+        <div class="skill-container">
+          <%for(let skill in skills){%>
+            <div class="skill-card">
+              <img class="skill-image" src="<%=skills[skill].image %>" alt="<%=skills[skill].name %>" />
+              
+            </div>
+            <%}%>
+
+
+        </div>
+        <a class="switchRight sliderButton"><img src="images/right-arrow.png"></a>
+      </div>
+      <h3 id="skillName"></h3>
+    </div>
+
+  </section>
+
+
+  <!---EMAIL-->
   <section id="contact">
 
     <div class="contact container">
       <% if (msg.length!=0){%>
         <span class="msg-sent">
-          <%= msg %><btn class="del">x</btn>
+          <%= msg %>
+            <btn class="del">x</btn>
         </span>
         <%}%>
 
@@ -156,7 +187,9 @@
     </div>
   </section>
 
+
   <script src="javascripts/index.js"></script>
+
 </body>
 
 </html>
