@@ -17,6 +17,12 @@ const BestPlayersApp=new Project("Best-Players-App",
 "https://github.com/Dimitris-Kaler/Best-Players-App"
 
 )
+
+const MemoryGame =new Project("Kal-Memory-Game",
+"This is a small sample of a memory game. This version serves as a basic demonstration of the game's functionality and design. The final version will incorporate Java Servlets, a database, and additional features, and will be hosted on a Tomcat web server.",
+"./images/game.jpg",
+"https://dimitris-kaler.github.io/Memory-Game/")
+
 const BackgroundGenerator=new Project("Background-Generator",
 "An app which allows user to create his own background.User can pick colors for his background or generate colors randomly,upload image(through session storage),and set properties like background-size ,blendmode",
 "./images/backgroundGenerator.png",
@@ -24,7 +30,7 @@ const BackgroundGenerator=new Project("Background-Generator",
 )
 const OtherProjects=new Project("Others","You can view  other projects at my github like calculator,to-do-list,my projects from peoplecert bootcamp,rock-scissors-paper game etc","./images/otherProjects.png","https://github.com/Dimitris-Kaler?tab=repositories")
 
-const projectsArray=[BestShopEver,MVCPrivateSchoolCrud,BestPlayersApp,BackgroundGenerator,OtherProjects]
+const projectsArray=[BestShopEver,MVCPrivateSchoolCrud,BestPlayersApp,BackgroundGenerator,MemoryGame,OtherProjects]
 
 
 
