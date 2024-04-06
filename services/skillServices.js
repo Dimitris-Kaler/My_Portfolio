@@ -23,8 +23,12 @@ const sails=new Skill("SAILS","./images/sails.jpg")
 
 const mysql=new Skill("MYSQL","./images/mysql.png");
 
+const liberty=new Skill("OPEN LIBERTY","./images/liberty.jpg")
 
-const skillsArray=[html,css,javascript,java,rpa,bootstrap,node,express,react,sails,mysql]
+
+
+
+const skillsArray=[html,css,javascript,java,rpa,bootstrap,node,express,react,sails,mysql,liberty]
 
 
 

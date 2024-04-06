@@ -31,6 +31,7 @@
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#work-experience" data-after="Work-experience">Experience</a></li>
             <li><a href="#skills" data-after="Skills">Skills</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
@@ -111,24 +112,49 @@
       </div>
     </div>
   </section>
+
+  <!--- WORK EXPERIENCE SECTION -->
+  <section id="work-experience">
+    <div class="work-experience container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="experience-card">
+        <h3>ARHS Developments - Interamerican</h3>
+        <p class="subtext"><b>Position: Junior Software Engineer</b></p>
+        <p class="subtext">Duration: [Start Date] - [End Date]</p>
+        <p><strong>RPA Task Force Team (5 months)</strong><br>
+          In this role, I investigated the RPA Automation Studio of IBM. My responsibilities included assessing the advantages and disadvantages of WDG Automation Studio, delivering solutions, and resolving flows with unattended bots.</p>
+  
+        <p><strong>IAM Task Force Team (11 months)</strong><br>
+          During my time in this team, I researched and selected the most suitable tool for IAM (Identity and Access Management) needs. We evaluated options such as Azure and Keycloak, ultimately choosing Keycloak. I contributed by creating SPI (Service Provider Interface) to customize Keycloak's functionality according to Interamerican's requirements. Additionally, I led the integration with external platforms.</p>
+  
+        <p><strong>Integration Platform Team (3 months)</strong><br>
+          In this team, I played a crucial role in creating and exposing new services to maintain existing projects. My responsibilities included ensuring the smooth integration of applications and keeping the platform in good shape.</p>
+      </div>
+      <!-- You can add more experience cards if you have multiple work experiences -->
+    </div>
+  </section>
   <!-- SKILLS SECTION -->
 
   <section id="skills">
     <div class="skills container">
       <h2 class="section-title">Skills</h2>
-      <div class="carusel">
-        <a class="switchLeft sliderButton"><img src="images/left-arrow.png"></a>
+      <!-- <div class="carusel">
+        <a class="switchLeft sliderButton"><img src="images/left-arrow.png"></a> -->
         <div class="skill-container">
           <%for(let skill in skills){%>
             <div class="skill-card">
               <img class="skill-image" src="<%=skills[skill].image %>" alt="<%=skills[skill].name %>" />
-              
+              <h3>
+                <%=skills[skill].name %>
+              </h3>
             </div>
+            <!-- <div class="skill-card">
+              <img class="skill-image" src="<%=skills[skill].image %>" alt="<%=skills[skill].name %>" />
+              
+            </div> -->
             <%}%>
-
-
         </div>
-        <a class="switchRight sliderButton"><img src="images/right-arrow.png"></a>
+        <!-- <a class="switchRight sliderButton"><img src="images/right-arrow.png"></a> -->
       </div>
       <h3 id="skillName"></h3>
     </div>
