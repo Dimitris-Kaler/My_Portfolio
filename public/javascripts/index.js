@@ -51,8 +51,8 @@ let skillcards=document.getElementsByClassName("skill-card");
 let scrollPerClick;
 let imagePadding=20;
 let scrollAmount=0
-let caruselLeftBtn=document.querySelector(".switchLeft")
-let caruselRightBtn=document.querySelector(".switchRight")
+// let caruselLeftBtn=document.querySelector(".switchLeft")
+// let caruselRightBtn=document.querySelector(".switchRight")
 let skillName=document.getElementById("skillName")
 let skillImage=document.getElementsByClassName("skill-image")
 
@@ -62,31 +62,31 @@ scrollPerClick=skillcards[0].clientWidth+imagePadding
 
 
 
-caruselLeftBtn.addEventListener("click",sliderScrollLeft)
-caruselRightBtn.addEventListener("click",sliderScrollRight)
+// caruselLeftBtn.addEventListener("click",sliderScrollLeft)
+// caruselRightBtn.addEventListener("click",sliderScrollRight)
 
 
 
-function sliderScrollLeft(){
-    sliders.scrollTo({
-        top:0,
-        left:(scrollAmount-=scrollPerClick),
-        behavior:"smooth"
-    });
-    if(scrollAmount<0){
-        scrollAmount=0;
-    }
-}
+// function sliderScrollLeft(){
+//     sliders.scrollTo({
+//         top:0,
+//         left:(scrollAmount-=scrollPerClick),
+//         behavior:"smooth"
+//     });
+//     if(scrollAmount<0){
+//         scrollAmount=0;
+//     }
+// }
 
-function sliderScrollRight(){
-    if(scrollAmount<=sliders.scrollWidth-sliders.clientWidth){
-        sliders.scrollTo({
-            top:0,
-            left:(scrollAmount+=scrollPerClick),
-            behavior:"smooth"
-        })
-    }
-}
+// function sliderScrollRight(){
+//     if(scrollAmount<=sliders.scrollWidth-sliders.clientWidth){
+//         sliders.scrollTo({
+//             top:0,
+//             left:(scrollAmount+=scrollPerClick),
+//             behavior:"smooth"
+//         })
+//     }
+// }
 
 //APPEAR THE NAME OF THE SKILL AFTER HOVERING AT THE IMAGE
 
