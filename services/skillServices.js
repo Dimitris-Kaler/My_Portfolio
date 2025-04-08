@@ -35,13 +35,16 @@ const keycloak=new Skill("Keycloak","./images/keycloak-removebg-preview.png")
 
 const OAuth2=new Skill("OAuth2","./images/oauth2-removebg-preview.png")
 
+const apic =new Skill("APIConnect","./images/apiconnect.png")
+
 const siebel=new Skill("Siebel CRM","./images/siebel.png")
 
 
 
 
 
-const skillsArray=[html,css,javascript,java,rpa,bootstrap,node,express,react,sails,sql,liberty,git,webServices,quarkus,keycloak,OAuth2,siebel]
+
+const skillsArray=[html,css,javascript,java,rpa,bootstrap,node,express,react,sails,sql,liberty,git,webServices,quarkus,keycloak,OAuth2,apic,siebel]
 
 
 

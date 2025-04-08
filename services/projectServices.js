@@ -28,9 +28,16 @@ const BackgroundGenerator=new Project("Background-Generator",
 "./images/backgroundGenerator.png",
 "https://github.com/Dimitris-Kaler/background-generator"
 )
+
+const RestApiExmplHub = new Project("REST-API-Examples-Hub",
+    "A project demonstrating RESTful API examples using various technologies like Spring Boot, Quarkus, Node.js, Express, and Liberty, with submodules for different implementations. It also includes API testing with frameworks such as Jest, Supertest, and Spock.",
+    "./images/restService.png",
+    "https://github.com/Dimitris-Kaler/REST-API-Examples-Hub"
+)
+
 const OtherProjects=new Project("Others","You can view  other projects at my github like calculator,to-do-list,my projects from peoplecert bootcamp,rock-scissors-paper game etc","./images/otherProjects.png","https://github.com/Dimitris-Kaler?tab=repositories")
 
-const projectsArray=[BestShopEver,MVCPrivateSchoolCrud,BestPlayersApp,BackgroundGenerator,MemoryGame,OtherProjects]
+const projectsArray=[BestShopEver,MVCPrivateSchoolCrud,RestApiExmplHub,BackgroundGenerator,MemoryGame,OtherProjects]
 
 
 
