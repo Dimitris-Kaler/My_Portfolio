@@ -11,7 +11,7 @@ const skillsArray=require("../services/skillServices")
 //render the page
 router.get("/",function(req,res){
 
-  res.render("index",{title:"My Portfolio",heroName:"Dimitris Kalerantes",projects:projectsArray,skills:skillsArray,cv:"DimitrisKalerantesCV.pdf",msg:req.flash("msg")})
+  res.render("index",{title:"Dimitris Kalerantes | Software Engineer Portfolio",heroName:"Dimitris Kalerantes",projects:projectsArray,skills:skillsArray,cv:"DimitrisKalerantesCV.pdf",msg:req.flash("msg")})
 
 })
 
